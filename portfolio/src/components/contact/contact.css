@@ -1,0 +1,255 @@
+.contact{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.c-heading{
+    text-decoration: underline;
+    text-decoration-color: #149ddd;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+}
+
+.c-wrapper{
+    display: flex;
+    margin: 40px 10px 20px 10px;
+}
+
+.c-infoContainer{
+    flex: 3;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px 5px #cecdcd;
+}
+
+.c-emailContainer{
+    flex: 4;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px 5px #cecdcd;
+    padding: 20px;
+}
+
+.c-infoWrapper{
+    margin-top: 30px;
+}
+
+.c-itemBackground{
+    background-color: #dff3fc;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-itemWrapper{
+    margin: 20px 40px;
+}
+
+.c-itemsContainer{
+    display: flex;
+    align-items: center;
+}
+
+.c-itemsContainerText{
+    margin-left: 20px;
+}
+
+.c-icon{
+    transform: scale(1.2);
+    color: #149ddd;
+}
+
+.c-itemWrapper:hover .c-itemBackground{
+    background-color: #149ddd;
+    transition: 0.5s;
+}
+
+.c-itemWrapper:hover .c-icon{
+    color: #dff3fc;
+    transition: 0.5s;
+}
+
+.c-itemHeading{
+    font-size: 22px;
+}
+
+.c-itemsContainerText>span{
+    color: #5c7598;
+}
+
+.c-nameAndEmailContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.c-nameContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.c-emailInputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.c-label{
+    color: #5c7598;
+}
+
+.c-input{
+    margin-top: 5px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #d7dce1;
+}
+
+.c-input:focus{
+    border: 1px solid rgb(120, 209, 238);
+    transition: 0.3s ease;
+}
+
+.c-subjectContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 10px;
+}
+
+.c-messageContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 10px;
+}
+
+.c-messageInput{
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid #d7dce1;
+    height: 200px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.c-messageInput:focus{
+    border: 1px solid rgb(120, 209, 238); 
+    transition: border 0.3s ease,   
+}
+
+.c-buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-errorMessage{
+    color: red;
+    margin-top: 10px;
+}
+
+.c-button{
+    background-color: #149ddd;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.c-button:hover{
+    background-color: #35befd;
+    transition: 0.3s ease;
+}
+
+.c-googleMapsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.map-container{
+    height: 400px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .contact{
+        margin-left: 0px;
+        
+    }
+
+    .c-heading{
+        margin-left: 10px;
+    }
+
+    .c-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    
+    .c-infoContainer{
+        flex: 0;
+        margin: 0px 10px;
+    }
+
+    .c-itemWrapper{
+        margin: 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .c-emailContainer{
+        flex: 0;
+        margin: 40px 0px;
+        box-shadow: 2px 2px 5px 5px #cecdcd;
+        padding: 20px;
+        width: 76%;
+    }
+
+    
+    .c-nameAndEmailContainer{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .c-nameContainer{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .c-emailInputContainer{
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .c-subjectContainer{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .c-messageContainer{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .c-button{
+        width: 50%;
+        margin-top: 30px;
+    }
+    
+
+}

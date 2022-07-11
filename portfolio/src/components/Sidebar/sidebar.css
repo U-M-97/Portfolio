@@ -1,0 +1,162 @@
+.sidebar{
+    height: 100vh;
+    position: sticky;
+    background-color: rgba(4,11,20,255);
+    top: 0;
+    bottom: 0;
+}
+
+.s-imgContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.s-imageBackground{
+    background-color: rgba(44,47,63,255);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.s-image{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 0px -6px;
+}
+
+.nameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.s-name{
+    color: white;
+}
+
+.s-socials{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.socialItemContainer{
+    background-color: rgba(33,36,49,255);
+    margin: 0px 10px;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.socialItemContainer:hover{
+    background-color: #149ddd;
+    transition: 0.3s;
+}
+
+.s-icon{
+    color: white;
+    transform: scale(0.9);
+}
+
+.s-sections{
+    margin-top: 30px;
+}
+
+.s-sectionsList{
+    list-style: none;
+}
+
+.s-sectionsListItem{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.s-sectionIcon{
+    color: white;
+    margin-right: 10px;
+}
+
+.s-sectionIconName{
+    color: white;   
+}
+
+.s-sectionsListItem:hover span,
+.s-sectionsListItem:hover .s-sectionIcon{
+    transition: 0.2s;
+    color: #149ddd;
+}
+
+.s-sectionsListItem.active span,
+.s-sectionsListItem.active .s-sectionIcon
+{
+    color: #149ddd;
+}
+
+
+.side-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.s-footerTop{
+    color: white;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-FooterSpan{
+    margin-left: 2px;
+}
+
+.s-FooterSpanName{
+    margin-left: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.s-copyrightIcon{
+    transform: scale(0.7);
+}
+
+.s-footerBottom{
+    color: white;
+    font-size: small;
+}
+
+.s-footerSpanUsama{
+    margin-left: 3px;
+    color: #149ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+}

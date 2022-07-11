@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+}
+
+.sideBarContainer{
+    flex: 2;
+}
+
+.componentsContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sideBarContainer{
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+    
+  
+}

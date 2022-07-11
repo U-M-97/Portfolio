@@ -1,0 +1,95 @@
+.navbarMobile {
+    display: none;
+}
+
+
+@media (max-width: 768px){
+
+    .navbarMobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .hamburgerWrapper{
+       display: flex;
+       align-items: center;
+       justify-content: right;
+       padding: 20px;
+       background-color: rgba(4,11,20,255);
+       color: white;
+       z-index: 1;
+    }
+    
+    .hamburger{
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+
+    .n-sectionsList{
+        background-color: rgba(4,11,20,255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-top: 61px;
+        top: 0;
+        left: 0;
+        right: 0;
+        border: 2px solid #149ddd;
+        margin-right: 2px;
+        animation: slideDown 1s ease;
+    }
+
+    .n-sectionsListItem{
+        margin: 22.8px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .n-sectionIcon{
+        transform: scale(1.5);
+        color: white;
+    }
+    
+    .n-sectionIconName{
+        margin: 0px 10px;
+        font-size: large;
+        color: white;
+    }
+
+    .n-sectionsListItem.active span,
+    .n-sectionsListItem.active .n-sectionIcon{
+        color: #149ddd;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-691px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    .n-ProfilePicContainer{
+        background-color: rgba(44,47,63,255);
+        margin-top: 5px;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .n-pic{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: 0px -6px;
+    }
+
+  
+}

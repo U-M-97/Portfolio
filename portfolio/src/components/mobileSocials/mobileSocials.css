@@ -1,0 +1,73 @@
+.mobileSocials{
+    display: none;
+}
+
+@media (max-width: 768px){
+    
+    .mobileSocials{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-heading{
+        text-decoration: underline;
+        text-decoration-color: #149ddd;
+        text-decoration-style: solid;
+        text-underline-offset: 10px;
+        margin-left: 10px;
+    }
+
+    .m-socialsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .m-socialItemContainer{
+        padding: 20px;
+        background-color:  rgba(4,11,20,255);
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .m-icon{
+        transform: scale(1.5);
+        color: white;
+    }
+
+    .m-socialItemContainer:hover{
+        background-color: #149ddd;
+    }
+
+    .m-footer{
+        background-color: rgba(4,11,20,255);
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .m-copyrightContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+    }
+
+    .m-copyrightIcon{
+        margin-right: 5px;
+    }
+
+    .m-usamaLink{
+        text-decoration: none;
+        color: #149ddd;
+    }
+}
