@@ -15,7 +15,7 @@ const projects = () => {
             <div className='p-overlay'></div>
           </a>
 
-          <a className='p-projectsItem'>
+          <a className='p-projectsItem' href='https://todo-mern-usama.herokuapp.com/' target="_blank">
            <img src={project2} className="p-1"/>
            <h2 className='p-projectTitle'>Todo List</h2>
            <div className='p-overlay'></div>

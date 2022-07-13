@@ -42,7 +42,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      if(inputs.name.length == 0 || inputs.email.length == 0 || inputs.subject.length == 0 || inputs.message.length == 0 ){
+      if(inputs.name == "" || inputs.email.length == 0 || inputs.subject.length == 0 || inputs.message.length == 0 ){
         setError(true)
     }else{
         setError(false)
